@@ -12,7 +12,7 @@ def quad_form(coef_a, coef_b, coef_c):
 	unorg_values = [x_add, x_sub]
 	for unorg_value in unorg_values:
 		if unorg_value.imag == 0.0:
-			x_values = [x_add.real, x_sub.real]
+			x_values = [round(x_add.real,3) , round(x_sub.real, 3)]
 		else:
 			x_values = [x_add, x_sub]
 
@@ -27,7 +27,6 @@ def quad_form(coef_a, coef_b, coef_c):
 	
 	return x_values
 
-#print(quad_form(1,3,-4))
 #print(quad_form(2,-4,-3))
 #print(quad_form(3, 4, 3))
 #print(quad_form(9,12,4))
